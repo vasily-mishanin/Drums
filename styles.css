@@ -2,6 +2,8 @@ body {
   text-align: center;
   background-color: #283149;
   background: url(images/LarsUlrich.jpg);
+  opacity: 0.6;
+  
 }
 
 h1 {
