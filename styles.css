@@ -1,4 +1,10 @@
+
+html, body {
+  height: 100%;
+}
 body {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #283149;
   background: url(images/LarsUlrich.jpg);
@@ -6,12 +12,32 @@ body {
   
 }
 
+main{
+  flex: 1 0 auto;
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   color: #fff;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 rgba(224, 61, 184, 0.808);
 }
+
+
+.set {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  flex-shrink: auto;
+  color: #1b2022;
+  background-color: #bbcef8;
+  font-family: sans-serif;
+}
+
+
 
 a {
   text-decoration: none;
@@ -23,11 +49,6 @@ a:hover {
   cursor: pointer;
 }
 
-footer {
-  color: #1b2022;
-  background-color: #bbcef8;
-  font-family: sans-serif;
-}
 
 .w {
   background-image: url("images/tom1.png");
@@ -57,9 +78,6 @@ footer {
   background-image: url("images/kick.png");
 }
 
-.set {
-  margin: 10% auto;
-}
 
 .game-over {
   background-color: red;
@@ -94,41 +112,5 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  body {
-    background-color: #283149;
-  }
 
-  h1 {
-    font-size: 3rem;
-    color: #fff;
-    font-family: "Arvo", cursive;
-    text-shadow: 3px 0 rgba(224, 61, 184, 0.808);
-  }
-
-  .set {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    height: 400px;
-    flex-wrap: wrap;
-    margin: 100px auto 40px;
-  }
-
-  .drum {
-    border: 5px solid #bbcef8;
-    font-size: 2rem;
-    line-height: 2;
-    font-weight: 900;
-    color: #da0463;
-    text-shadow: 3px 0 #dbedf3;
-    border-radius: 15px;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    margin: 10px;
-    background-color: white;
-  }
 }
