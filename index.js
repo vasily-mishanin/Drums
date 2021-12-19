@@ -1,4 +1,4 @@
-//detecting clicks
+//handle clicks
 
 let buttons = document.querySelectorAll(".drum");
 for (let button of buttons) {
@@ -9,7 +9,7 @@ for (let button of buttons) {
   });
 }
 
-//detecting key presses
+//hande key presses
 
 document.addEventListener("keydown", (event) => {
   makeSound(event.key);
@@ -17,7 +17,7 @@ document.addEventListener("keydown", (event) => {
   console.log(event);
 });
 
-//playing sounds
+//playing buttons sounds
 
 function makeSound(key) {
   switch (key) {
