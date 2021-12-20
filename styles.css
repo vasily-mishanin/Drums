@@ -22,8 +22,19 @@ h1 {
   color: #F2F013;
   font-family: "Arvo", cursive;
   text-shadow: 5px 5px #FF5151;
+  animation: header 0.5s 3;
 }
 
+@keyframes header {
+  0%, 100% {
+    text-shadow: 5px 5px #FF5151;
+    
+  }  
+  50% {
+    text-shadow: 8px 8px #d9ff51;
+  }
+
+}
 
 .set {
   display: flex;
@@ -64,37 +75,94 @@ h1 {
   height: 150px;
   text-align:center;
   margin: 10px;
-  background-color: white;
+  background-color: #fff;
   background-size: contain;
 }
 
 
+
 .w {
   background-image: url("images/tom1.png");
+  animation: focus 0.5s 2s;
+}
+
+.w > span {
+  animation: keyFocus 0.5s 2s;
 }
 
 .a {
   background-image: url("images/tom2.png");
+  animation: focus 0.5s 2.5s;
+}
+
+.a > span {
+  animation: keyFocus 0.5s 2.5s;
 }
 
 .s {
   background-image: url("images/tom3.png");
+  animation: focus 0.5s 3s;
+}
+
+.s > span {
+  animation: keyFocus 0.5s 3s;
 }
 
 .d {
   background-image: url("images/tom4.png");
+  animation: focus 0.5s 3.5s;
+}
+
+.d > span {
+  animation: keyFocus 0.5s 3.5s;
 }
 
 .j {
   background-image: url("images/snare.png");
+  animation: focus 0.5s 4s;
+}
+
+.j > span {
+  animation: keyFocus 0.5s 4s;
 }
 
 .k {
   background-image: url("images/crash.png");
+  animation: focus 0.5s 4.5s;
+}
+
+.k > span {
+  animation: keyFocus 0.5s 4.5s;
 }
 
 .l {
   background-image: url("images/kick.png");
+  animation: focus 0.5s 5s;
+}
+
+.l > span {
+  animation: keyFocus 0.5s 5s;
+}
+
+@keyframes focus {
+  0%, 100%{
+    border:5px solid #105652;
+  }
+  50%{
+    border:7px solid #F2F013;
+  } 
+}
+
+@keyframes keyFocus {
+  0%, 100% {
+    background-color: #fff;
+  }
+  50%{
+    background-color: #F2F013;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
 }
 
 footer {
